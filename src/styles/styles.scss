@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Roboto:wght@400;700&display=swap');
+
+/*Nullify*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*-----------------------*/
+
+
+@font-face {
+  font-family: "Exo 2 Thin";
+  src: url("../fonts/Exo2.0-Thin.otf");
+}
+
+html, body {
+  height: 100%;
+}
+
+.body {
+  font-family: "Exo 2", "Trebuchet MS", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cat-food {
+  background: url("../img/bg@2x.png");
+  height: 100%;
+
+  & > .container {
+    padding: 36px 80px 67px;
+
+  }
+
+  &__title {
+    font-family: "Exo 2", sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0 0 24px 0;
+    color: #fff;
+  }
+
+  &__body {
+  }
+
+  &__back {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-color: transparent;
+    border: 4px solid #1698D9;
+    border-radius: 10px;
+    height: 513px;
+    width: 324px;
+    z-index: -10;
+  }
+
+  &__card {
+    height: 509px;
+    width: 320px;
+    background: #fff;
+    border: 4px solid #1698D9;
+    z-index: 10;
+    padding: 0 45px;
+    border-radius: 10px;
+    margin: 0 80px 0 0;
+
+    &:nth-child(3) {
+      margin: 0;
+    }
+
+  }
+
+}
+
+.row {
+  max-width: 320px * 3 + 160px;
+
+
+}
+
+.col {
+  display: flex;
+
+}
+
+.card {
+  position: relative;
+  z-index: 10;
+  &__description {
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 21px 0 0 0;
+    margin: 0 0 5px 0;
+    color: #666666;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__title {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+  }
+
+  &__flavor {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0 0 22px 0;
+  }
+
+  &__portions {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__gift {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -300;
+    top: 229px;
+    left: 0;
+    img {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 60px;
+
+    }
+  }
+
+  &__weight {
+    font-family: "Trebuchet MS", sans-serif;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    background-color: #1698D9;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text {
+      padding: 10px 0 0 1px;
+      color: #fff;
+    }
+    span {
+      font-size: 42px;
+      line-height: 22px;
+    }
+  }
+
+  &__bait {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    position: absolute;
+    top: 517px;
+    //left: 0;
+    text-align: center;
+    a {
+      color: #1698D9;
+      text-decoration: underline dashed;
+    }
+  }
+}
+
+.cat-food__card.disabled {
+  border-color: #979797;
+
+  .card__description {
+    opacity: 0.5;
+    color: #B3B3B3;
+  }
+
+  .card__title {
+    opacity: 0.5;
+    color: #B3B3B3;
+  }
+
+  .card__flavor {
+    opacity: 0.5;
+    color: #B3B3B3;
+  }
+
+  .card__portions {
+    opacity: 0.5;
+    color: #B3B3B3;
+  }
+
+  .card__gift {
+    opacity: 0.5;
+    color: #B3B3B3;
+  }
+
+  .card__img {
+    opacity: 0.5;
+  }
+
+  .card__weight {
+    background-color: #B3B3B3;
+
+  }
+
+}
+
+.cat-food__card.selected {
+  border-color: #D91667;
+  .card__weight {
+    background-color: #D91667;
+
+  }
+}
+
+.cat-food__card.hover {
+  border-color: #2EA8E6;
+  transition: all .7s ease-in 0s;
+}
+
+.cat-food__card.hoverSelect {
+  border-color: #E52E7A;
+  transition: all .7s ease-in 0s;
+}
+
+
